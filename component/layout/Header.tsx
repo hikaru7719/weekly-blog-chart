@@ -1,10 +1,7 @@
 import { Layout, Menu } from "antd";
 
 const styles = {
-  p: { fontSize: "20px", color: "#fff" },
-  userMenu: {
-    float: "right"
-  }
+  p: { fontSize: "20px", color: "#fff" }
 } as const;
 
 export const Header = () => {
