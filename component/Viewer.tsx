@@ -11,6 +11,7 @@ import {
   YAxis
 } from "recharts";
 
+import data from "../data/metrics.json";
 import { Header } from "./layout/Header";
 
 const { Content } = Layout;
@@ -26,50 +27,6 @@ export const Viewer = () => {
     }
   } as const;
 
-  const data = [
-    {
-      name: "2020/03/07",
-      pv: 237,
-      hatena: 4,
-      twitter: 259
-    },
-    {
-      name: "2020/03/14",
-      pv: 317,
-      hatena: 4,
-      twitter: 266
-    },
-    {
-      name: "2020/03/21",
-      pv: 200,
-      hatena: 4,
-      twitter: 269
-    },
-    {
-      name: "2020/03/28",
-      pv: 317,
-      hatena: 4,
-      twitter: 266
-    },
-    {
-      name: "2020/03/30",
-      pv: 200,
-      hatena: 4,
-      twitter: 269
-    },
-    {
-      name: "2020/03/31",
-      pv: 317,
-      hatena: 4,
-      twitter: 266
-    },
-    {
-      name: "2020/03/32",
-      pv: 200,
-      hatena: 4,
-      twitter: 269
-    }
-  ];
   const xsSpan = 24;
   const smSpan = 11;
 
