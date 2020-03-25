@@ -12,6 +12,7 @@ import {
 } from "recharts";
 
 import data from "../data/metrics.json";
+import { Footer } from "./layout/Footer";
 import { Header } from "./layout/Header";
 
 const { Content } = Layout;
@@ -19,7 +20,7 @@ export const Viewer = () => {
   const [barSize, setBarSize] = React.useState(10);
   const styles = {
     div: {
-      margin: "30px",
+      margin: "20px",
       textAlign: "center"
     },
     chartDiv: {
@@ -29,7 +30,8 @@ export const Viewer = () => {
 
   const xsSpan = 24;
   const smSpan = 11;
-
+  const graphHeight = 280;
+  const titleCardHeight = graphHeight + 70;
   const onChangeBarSize = (value: number | [number, number]) => {
     if (typeof value === "number") {
       setBarSize(value);
@@ -41,9 +43,9 @@ export const Viewer = () => {
       <Content>
         <div style={{ width: "100%" }}>
           <div style={styles.div}>
-            <Row justify="center" gutter={[{ xs: 0, sm: 50 }, 40]}>
+            <Row justify="center" gutter={[{ xs: 0, sm: 30 }, 20]}>
               <Col xs={xsSpan} sm={smSpan}>
-                <Card style={{ height: 370 }}>
+                <Card style={{ height: titleCardHeight }}>
                   <Typography.Title>Weekly Metrics</Typography.Title>
                   <div style={{ textAlign: "left" }}>
                     <Typography.Text>
@@ -66,7 +68,7 @@ export const Viewer = () => {
                 <Card>
                   <div style={styles.chartDiv}>
                     ブログPV
-                    <ResponsiveContainer width="100%" height={300}>
+                    <ResponsiveContainer width="100%" height={graphHeight}>
                       <BarChart className="container" data={data}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
@@ -83,7 +85,7 @@ export const Viewer = () => {
                 <Card>
                   Twitterフォロワー数
                   <div style={styles.chartDiv}>
-                    <ResponsiveContainer width="100%" height={300}>
+                    <ResponsiveContainer width="100%" height={graphHeight}>
                       <BarChart className="container" data={data}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
@@ -104,7 +106,7 @@ export const Viewer = () => {
                 <Card>
                   はてなブックマーク数
                   <div style={styles.chartDiv}>
-                    <ResponsiveContainer width="100%" height={300}>
+                    <ResponsiveContainer width="100%" height={graphHeight}>
                       <BarChart className="container" data={data}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="name" />
@@ -125,6 +127,7 @@ export const Viewer = () => {
           </div>
         </div>
       </Content>
+      <Footer />
     </Layout>
   );
 };
