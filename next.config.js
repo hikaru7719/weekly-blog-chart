@@ -25,8 +25,5 @@ module.exports = withCss({
       });
     }
     return config;
-  },
-  env: {
-    server: isProd ? "https://production-server.com" : "http://localhost:3000"
   }
 });
