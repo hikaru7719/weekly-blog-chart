@@ -52,7 +52,7 @@ export const Viewer = () => {
                       週間のメトリクスをグラフで表示します。
                     </Typography.Text>
                     <Typography.Text>
-                      毎週日曜日に各メトリクスの数値を更新します。以下設定でバーの太さと表示するデータの期間を変更できます。
+                      毎週日曜日に各メトリクスの数値を更新します。バーの太さと表示するデータの期間を変更できます。
                     </Typography.Text>
                     <Typography.Title level={4}>BarSize</Typography.Title>
                     <Slider
