@@ -2,48 +2,64 @@
   {
     "name": "2020/03/07",
     "pv": 237,
+    "display": 1495,
+    "click": 93,
     "hatena": 4,
     "twitter": 259
   },
   {
     "name": "2020/03/14",
     "pv": 317,
+    "display": 1242,
+    "click": 86,
     "hatena": 4,
     "twitter": 266
   },
   {
     "name": "2020/03/22",
     "pv": 136,
+    "display": 1060,
+    "click": 54,
     "hatena": 5,
     "twitter": 269
   },
   {
     "name": "2020/03/29",
     "pv": 107,
+    "display": 1458,
+    "click": 77,
     "hatena": 5,
     "twitter": 270
   },
   {
     "name": "2020/04/05",
     "pv": 148,
+    "display": 1338,
+    "click": 64,
     "hatena": 5,
     "twitter": 272
   },
   {
     "name": "2020/04/12",
     "pv": 172,
+    "display": 1058,
+    "click": 57,
     "hatena": 5,
     "twitter": 278
   },
   {
     "name": "2020/04/19",
     "pv": 123,
+    "display": 829,
+    "click": 43,
     "hatena": 5,
     "twitter": 283
   },
   {
     "name": "2020/04/26",
     "pv": 136,
+    "display": 816,
+    "click": 45,
     "hatena": 5,
     "twitter": 285
   }

@@ -5,6 +5,7 @@ import {
   CartesianGrid,
   ComposedChart as BarChart,
   Legend,
+  Line,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -27,11 +28,11 @@ export const Viewer = () => {
       margin: "0 auto"
     }
   } as const;
-
   const xsSpan = 24;
   const smSpan = 11;
   const graphHeight = 280;
   const titleCardHeight = graphHeight + 70;
+
   const onChangeBarSize = (value: number | [number, number]) => {
     if (typeof value === "number") {
       setBarSize(value);
@@ -79,6 +80,12 @@ export const Viewer = () => {
                         <Tooltip />
                         <Legend />
                         <Bar dataKey="pv" fill="#00bcd4" barSize={barSize} />
+                        <Line
+                          type="basis"
+                          dataKey="click"
+                          stroke="#f44336"
+                          name="検索click数"
+                        />
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
